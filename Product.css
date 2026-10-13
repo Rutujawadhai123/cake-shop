@@ -1,0 +1,126 @@
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(208, 208, 179);
+        }
+        
+      .v-nav{
+         display: flex;
+        justify-content: center;
+        align-items: center ;
+         background-color: rgb(209, 164, 197);
+         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+        }
+      .h-items{
+       list-style: none;
+       padding: 20px;
+        }
+      .h-items:hover{
+       background-color: pink;
+       }
+
+      a{
+         text-decoration: none;
+         font-size: 30px;
+         color: rgb(13, 13, 13);
+       }
+       a:hover{
+            text-decoration: underline;
+
+       }
+
+        .products {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .products h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .products > p {
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            width: 280px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h2 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: #d6336c;
+            color: white;
+        }
+
+        .order-btn:hover {
+            background: #a61e4d;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            padding: 25px 5px;
+            background: white;
+        }
+
+        .filter {
+            padding: 11px 30px;
+            border: 1px solid #eadbd7;
+            border-radius: 30px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .filter.active,
+        .filter:hover {
+            background: #d93660;
+            color: white;
+        }
