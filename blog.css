@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f5;
+}
+
+.d1 {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #8b3a50;
+    padding: 20px;
+}
+
+.v-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.h-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.h-items a:hover {
+    color: pink;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffe0e6;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #8b3a50;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #555;
+}
+
+.blog-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.blog-card {
+    flex: 0 1 calc(33.333% - 17px);
+    min-width: 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.blog-content h3 {
+    color: #8b3a50;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.blog-content p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.blog-content a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 18px;
+    background-color: #8b3a50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-content a:hover {
+    background-color: #612337;
+}
+
+footer {
+    background-color: #8b3a50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .blog-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .blog-card {
+        width: 100%;
+    }
+}
