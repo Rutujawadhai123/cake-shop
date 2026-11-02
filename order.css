@@ -1,107 +1,205 @@
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #fff4f1;
-            color: #382522;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .order-page {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf7;
+    color: #42252c;
+}
 
-        .order-box {
-            width: 900px;
-            max-width: 100%;
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            display: flex;
-            gap: 40px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
+.order-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff1f3;
+}
 
-        .cake-image {
-            width: 45%;
-        }
+.order-box {
+    width: 950px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 8px 30px rgba(90, 40, 50, 0.10);
+}
 
-        .cake-image img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 15px;
-        }
+.cake-image {
+    width: 45%;
+    flex-shrink: 0;
+}
 
-        .order-form {
-            width: 55%;
-        }
+.cake-image img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(139, 58, 80, 0.12);
+}
 
-        .order-form h1 {
-            font-family: Georgia, serif;
-            font-size: 35px;
-            margin-bottom: 8px;
-        }
+.order-form {
+    width: 55%;
+}
 
-        .order-form p {
-            color: #777;
-            margin-bottom: 25px;
-        }
+.order-form h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 4vw, 36px);
+    color: #8b3a50;
+    margin-bottom: 12px;
+}
 
-        .input-box {
-            margin-bottom: 18px;
-        }
+.order-form p {
+    color: #78666a;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
 
-        .input-box label {
-            display: block;
-            margin-bottom: 7px;
-            font-weight: bold;
-        }
+.input-box {
+    margin-bottom: 18px;
+}
 
-        .input-box input,
-        .input-box select,
-        .input-box textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            outline: none;
-            font-size: 14px;
-        }
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: #42252c;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-        .input-box textarea {
-            height: 80px;
-            resize: none;
-        }
+.input-box input,
+.input-box select,
+.input-box textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #ead9dd;
+    border-radius: 9px;
+    background-color: #fffaf9;
+    color: #42252c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
 
-        .place-order {
-            width: 100%;
-            padding: 13px;
-            border: none;
-            border-radius: 25px;
-            background: #d93660;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus {
+    border-color: #d6336c;
+    box-shadow: 0 0 0 3px rgba(214, 51, 108, 0.10);
+    background-color: #ffffff;
+}
 
-        .place-order:hover {
-            background: #a91f46;
-        }
+.input-box textarea {
+    height: 90px;
+    resize: vertical;
+}
 
-        .back {
-            display: block;
-            text-align: center;
-            margin-top: 15px;
-            color: #d93660;
-            text-decoration: none;
-        }
+.place-order {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #d6336c;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-      
+.place-order:hover {
+    background-color: #a61e4d;
+    transform: translateY(-2px);
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #d6336c;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back:hover {
+    color: #a61e4d;
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .order-box {
+        width: 650px;
+        padding: 28px;
+        gap: 25px;
+    }
+
+    .cake-image {
+        width: 42%;
+    }
+
+    .cake-image img {
+        height: 380px;
+    }
+
+    .order-form {
+        width: 58%;
+    }
+
+    .order-form h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .order-page {
+        padding: 25px 15px;
+    }
+
+    .order-box {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        gap: 25px;
+        border-radius: 15px;
+    }
+
+    .cake-image,
+    .order-form {
+        width: 100%;
+    }
+
+    .cake-image img {
+        height: 250px;
+        border-radius: 12px;
+    }
+
+    .order-form h1 {
+        font-size: 30px;
+    }
+
+    .order-form p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .input-box {
+        margin-bottom: 16px;
+    }
+
+    .place-order {
+        padding: 13px;
+    }
+}
